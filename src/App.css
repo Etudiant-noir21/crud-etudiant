@@ -1,0 +1,26 @@
+.body-component{
+  width: 100%;
+}
+
+ table{
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 5px;
+  overflow: hidden;
+  border: 1px solid #212121;
+}
+
+ .table thead{
+  background-color: #28cb8b;
+  color: #ffffff;
+  text-align: left;
+}
+
+ table thead th{
+  padding: 10px 15px;
+}
+
+ table tbody td{
+  padding: 10px 15px;
+  border-bottom: 1px solid #e1e1e1;
+}
