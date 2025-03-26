@@ -1,5 +1,4 @@
 {
-  "homepage": "https://github.com/Etudiant-noir21/application-crud-etudiant.git",
   "name": "crud-react",
   "private": true,
   "version": "0.0.0",
@@ -9,8 +8,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-   "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+  
   },
   "dependencies": {
     "bootstrap": "^5.3.3",
