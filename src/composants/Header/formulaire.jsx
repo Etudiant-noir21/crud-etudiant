@@ -102,20 +102,33 @@ export const Modal = ({nom,prenom,email,telephone,setNom,setPrenom,setEmail,
                         <form className="form-group" onSubmit={Onsubmit}>
                             <div className="row">
                                 <div className="col-md-6 col-lg-6">
-                                    <input type="text" placeholder="Nom" className="form-control mb-2"
-                                     value={nom}  onChange={(e)=>setNom(e.target.value)}/>
+                                    <Input type="text"
+                                    placeholder="Nom"
+                                    value={nom}
+                                    onChange={(e)=>setNom(e.target.value)}
+                                    />
+                                   
                                 </div>
                                 <div className="col-md-6 col-lg-6">
-                                    <input type="text" placeholder="Prenom" className="form-control mb-2" 
-                                    value={prenom}  onChange={(e)=>setPrenom(e.target.value)}/>
+                                <Input type="text"
+                                    placeholder="Prenom"
+                                    value={prenom}
+                                    onChange={(e)=>setPrenom(e.target.value)}
+                                    />
                                 </div>
                                 <div className="col-md-6 col-lg-6">
-                                    <input type="email" placeholder="Email" className="form-control mb-2"
-                                   value={email}  onChange={(e)=>setEmail(e.target.value)}/>
+                                <Input type="email"
+                                    placeholder="E-mail"
+                                    value={email}
+                                    onChange={(e)=>setEmail(e.target.value)}
+                                    />
                                 </div>
                                 <div className="col-md-6 col-lg-6">
-                                    <input type="number" placeholder="telephone" className="form-control mb-2" 
-                                    value={telephone}  onChange={(e)=>setTelephone(e.target.value)}/>
+                                <Input type="number"
+                                    placeholder="telephone"
+                                    value={telephone}
+                                    onChange={(e)=>setTelephone(e.target.value)}
+                                    />
                                 </div>
                             </div>
                             <div className="d-flex gap-2">
@@ -139,4 +152,14 @@ export const Modal = ({nom,prenom,email,telephone,setNom,setPrenom,setEmail,
             </div>
           </div>
     </>;
+}
+
+
+
+export function Input({value,onChange,type,placeholder}) {
+    return (
+        <div className="form-group">
+            <input type={type} className="form-control" value={value} onChange={onChange} placeholder={placeholder}/>
+        </div>
+    );
 }
